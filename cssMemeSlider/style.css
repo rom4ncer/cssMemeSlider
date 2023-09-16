@@ -1,3 +1,122 @@
-h1 {
-  color: blue;
+:root {
+  --img-width: 95vw;
+  --img-height: 80vh;
+  --txt-width: 70vw;
+  --color-black: rgb(37, 40, 42);
+  --color-white: rgb(227, 232, 232);
+  --color-gray: rgb(190, 190, 190);
+  --color-blue: rgb(117, 171, 250);
 }
+
+* {
+  /* outline: 1px dotted wheat; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+.wrapper {
+  height: calc(100vh - 2rem);
+  padding: 1rem;
+  background-color: var(--color-black);
+
+  display: flex;
+  justify-content: center;
+}
+
+
+/* desktop */
+.radio {
+  display: none;
+}
+
+.slider {
+  width: var(--img-width);
+  overflow-x: hidden;
+}
+
+.images {
+  width: calc(var(--img-width) * 4);
+  margin-left: 0;
+  transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+img {
+  width: var(--img-width);
+  height: var(--img-height);
+  object-fit: contain;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+
+#bullets {
+  display: inline-block;
+}
+
+#bullets label {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0.5rem solid var(--color-black);
+}
+
+#bullets label:hover .dot {
+  background-color: var(--color-white);
+}
+
+#bullets label:active .dot {
+  background-color: var(--color-gray);
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+}
+
+#r1:checked~.slider .images {
+  margin-left: calc(var(--img-width) * -0);
+}
+
+#r2:checked~.slider .images {
+  margin-left: calc(var(--img-width) * -1);
+}
+
+#r3:checked~.slider .images {
+  margin-left: calc(var(--img-width) * -2);
+}
+
+#r4:checked~.slider .images {
+  margin-left: calc(var(--img-width) * -3);
+}
+
+#r1:checked~.slider .controls #bullets label:nth-child(1) .dot,
+#r2:checked~.slider .controls #bullets label:nth-child(2) .dot,
+#r3:checked~.slider .controls #bullets label:nth-child(3) .dot,
+#r4:checked~.slider .controls #bullets label:nth-child(4) .dot {
+  background-color: var(--color-black);
+  border: 2px solid var(--color-blue);
+}
+
+#r1:checked~.slider .controls #bullets label:nth-child(1):hover .dot,
+#r2:checked~.slider .controls #bullets label:nth-child(2):hover .dot,
+#r3:checked~.slider .controls #bullets label:nth-child(3):hover .dot,
+#r4:checked~.slider .controls #bullets label:nth-child(4):hover .dot {
+  background-color: var(--color-black);
+  border: 2px solid var(--color-white);
+}
+
+
+
+
+/* mobile */

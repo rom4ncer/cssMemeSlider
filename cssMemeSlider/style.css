@@ -117,7 +117,6 @@ img {
 }
 
 .slider-txt {
-  /* margin-top: 1rem; */
   width: var(--txt-width);
   overflow-x: hidden;
 }
@@ -168,9 +167,14 @@ img {
   display: none;
 }
 
-.mobile #bullets {
+.mobile #bullets {  
   display: flex;
   justify-content: center;
+  margin: 1rem 0;
+}
+
+.mobile .texts{
+  padding-top: 0;
 }
 
 #m-r1:checked~.slider #bullets label:nth-child(1) .dot,

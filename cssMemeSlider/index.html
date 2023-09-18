@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Meme Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- desktop -->
+    <div class="desktop">
+      <input class="radio" type="radio" name="point" id="r1" checked>
+      <input class="radio" type="radio" name="point" id="r2">
+      <input class="radio" type="radio" name="point" id="r3">
+      <input class="radio" type="radio" name="point" id="r4">
+
+      <div class="slider">
+
+        <div class="images">
+          <img src="./img/1.jpg"><img src="./img/2.jpg"><img src="./img/3.jpg"><img src="./img/4.jpg">
+        </div>
+
+        <div class="controls">
+
+          <div class="slider-txt">
+            <div class="texts">
+              <span>Once upon a time...</span><span>...there lived a kitten...</span><span>...who wanted to
+                become...</span><span>...a frontend developer.</span>
+            </div>
+          </div>
+
+          <div id="bullets">
+            <label for="r1">
+              <div class="dot"></div>
+            </label><label for="r2">
+              <div class="dot"></div>
+            </label><label for="r3">
+              <div class="dot"></div>
+            </label><label for="r4">
+              <div class="dot"></div>
+            </label>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- mobile -->
+    <div class="mobile">
+      <input class="radio" type="radio" name="m-point" id="m-r1" checked>
+      <input class="radio" type="radio" name="m-point" id="m-r2">
+      <input class="radio" type="radio" name="m-point" id="m-r3">
+      <input class="radio" type="radio" name="m-point" id="m-r4">
+
+      <div class="slider">
+
+        <div class="images">
+          <img src="./img/1.jpg"><img src="./img/2.jpg"><img src="./img/3.jpg"><img src="./img/4.jpg">
+        </div>
+
+        <div id="bullets">
+          <label for="m-r1">
+            <div class="dot"></div>
+          </label><label for="m-r2">
+            <div class="dot"></div>
+          </label><label for="m-r3">
+            <div class="dot"></div>
+          </label><label for="m-r4">
+            <div class="dot"></div>
+          </label>
+        </div>
+
+        <div class="slider-txt">
+          <div class="texts">
+            <span>Once upon a time...</span><span>...there lived a kitten...</span><span>...who wanted to
+              become...</span><span>...a frontend developer.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

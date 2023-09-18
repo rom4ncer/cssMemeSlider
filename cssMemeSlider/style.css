@@ -105,7 +105,7 @@ img {
 #r3:checked~.slider .controls #bullets label:nth-child(3) .dot,
 #r4:checked~.slider .controls #bullets label:nth-child(4) .dot {
   background-color: var(--color-black);
-  border: 2px solid var(--color-blue);
+  border: 0.125rem solid var(--color-blue);
 }
 
 #r1:checked~.slider .controls #bullets label:nth-child(1):hover .dot,
@@ -113,7 +113,7 @@ img {
 #r3:checked~.slider .controls #bullets label:nth-child(3):hover .dot,
 #r4:checked~.slider .controls #bullets label:nth-child(4):hover .dot {
   background-color: var(--color-black);
-  border: 2px solid var(--color-white);
+  border: 0.125rem solid var(--color-white);
 }
 
 .slider-txt {
@@ -198,7 +198,7 @@ img {
 #m-r3:checked~.slider #bullets label:nth-child(3) .dot,
 #m-r4:checked~.slider #bullets label:nth-child(4) .dot {
   background-color: var(--color-black);
-  border: 2px solid var(--color-blue);
+  border: 0.125rem solid var(--color-blue);
 }
 
 #m-r1:checked~.slider #bullets label:nth-child(1):hover .dot,
@@ -206,7 +206,7 @@ img {
 #m-r3:checked~.slider #bullets label:nth-child(3):hover .dot,
 #m-r4:checked~.slider #bullets label:nth-child(4):hover .dot {
   background-color: var(--color-black);
-  border: 2px solid var(--color-white);
+  border: 0.125rem solid var(--color-white);
 }
 
 #m-r1:checked~.slider .slider-txt .texts span:nth-child(1),
